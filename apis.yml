@@ -1,23 +1,52 @@
 aid: ariasystems
+
 name: Ariasystems
-description: 'Ariasystems is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+
+description: 'Ariasystems is a stub entry in the API Evangelist catalog, originating from a secondary-market harvest. The company’s public presence is currently minimal, with no accessible official website or documented API endpoints discovered through web searches. This profile serves as a placeholder pending future discovery of verifiable digital assets, documentation, or API specifications.'
+
 url: https://raw.githubusercontent.com/api-evangelist/ariasystems/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-26 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-09-26'
+
 modified: '2026-09-26'
+
 tags:
 - Company
-apis: []
+- Technology
+- Software
+- API
+- Integration
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
-- type: Website
-  url: https://equityzen.com/company/ariasystems
+
+  - type: Hosts
+    url: hosts/ariasystems-hosts.yml
+  - type: Vendors
+    url: vendors/ariasystems-vendors.yml
+  - type: DomainSecurity
+    url: security/ariasystems-domain-security.yml
+  - type: Website
+    url: https://equityzen.com/company/ariasystems
+
+apis: []
+x-enrichment:
+  date: '2026-09-26'
+  status: minimal
+  artifacts_added: 3
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local
